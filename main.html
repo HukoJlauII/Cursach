@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menustyle.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Josefin+Slab" />
+    <title>Albus</title>
+</head>
+<body>
+        <div class="wrapper">
+        <div class="navbar" id="navmenu" >
+            <a href="#"><img id="logonav" src="" alt="logo" ></a>
+            <div class="logoname"><h1>Albus</h1></div>
+            <div id="opennav" class="navbutton">
+                <img id="menubtn" src="images/menu.png" alt="opennav">
+            </div>
+            <ul id="navbarmenu" class="navbar-items">
+                <li class="navbar-item"><a href="catalog.html">Каталог</a> </li>
+                <li class="navbar-item"><a href="delivery.html">Доставка</a> </li>
+                <li class="navbar-item"><a href="payment.html">Оплата</a> </li>
+                <li class="navbar-item"><a href="about.html">О нас</a> </li>
+            </ul>
+            <div class="btns">
+                <div id="cartlogo" class="navbutton">
+                    <a href="">
+                        <img id="cartlogoimg"src="images\cartlogo.svg"  alt="cart">
+                    </a>
+                    
+                </div>
+                <div id="searchlogo" class="navbutton">
+                    <img id="searchlogoimg"  src="images\logosearch.svg "  alt="search">
+                </div>
+                     
+            </div>
+        </div>
+        <div id="main" class="main">
+            <div class="maincontent">
+                <picture>
+                    <source srcset="images/mainmobile.jpg" media="(max-width:450px)">
+                    <source srcset="images/mainmenuimg.jpg" media="(min-width:1001px)">
+                <img src="images\mainmenuimg.jpg" width= 100%; alt="">    
+                </picture>
+                
+                <div class="othercontent">
+                    
+                    <a href="">
+                       <div class="othercontent-item" id="candy">
+                           <img src="images/candy.jfif" alt="">
+                            <p> Конфеты</p> 
+                        </div>
+                    </a>
+                        
+                    <a href="">
+                        <div class="othercontent-item" id="chocolate">
+                            <img src="images/chocolate.jfif" alt="">
+                            <p> Шоколад</p>
+                        </div>
+                    </a>
+                    <a href="">
+                        <div class="othercontent-item" id="cake">
+                            <img src="images/cake2.jfif" alt="">
+                            <p>Торты</p>
+                        </div>   
+                    </a>  
+                   
+                </div>
+
+            </div>
+        </div>
+        <div id="footbarmenu" class="footbar">
+            <ul class="footbar-items">
+                <li class="footbar-item"><a href="">О нас</a> </li>
+                <li class="footbar-item"><a href="">Контакты</a> </li>
+                <li class="footbar-item"><a href="">Информация</a> </li>
+                <li class="footbar-item"><a href="">Вопросы и ответы</a> </li>
+            </ul>
+        </div>
+    </div>
+        <script src="script.js"></script>
+</body>
+</html>
+

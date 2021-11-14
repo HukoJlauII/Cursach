@@ -1,0 +1,243 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+    box-sizing: border-box;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	
+    font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body
+{
+	height: 100%;
+}
+/* .wrapper
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+} */
+.header
+{
+	align-items: center;
+}
+.navbar
+{
+	display: grid;
+	align-items: center;
+	grid-template-columns: 20% 60% 20%;
+	margin: 0;
+	background: #F5EAD3;
+	min-height: 166px;
+	z-index: 100;
+	/* flex-basis: 100%; */
+}
+#logonav{
+	margin-left: 20px;
+	flex-basis:15% ;
+}
+.logoname
+{
+	display: none;
+}
+.navbar-items
+{
+	margin: auto;
+	display: flex;
+	font-family: "Josefin Slab";
+	flex-basis: 50%;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid black;
+	width:100% ;
+
+}
+.navbar-item
+{
+	margin-bottom: 14px;
+	/* font-size: 48px; */
+	font-size: calc(18px + 30 * (100vw / 1200));
+}
+.navbar-item a{
+	text-decoration: none;
+	color: black;
+}
+.btns
+{
+	margin: 10px;
+	display: flex;
+	flex-direction: row-reverse;
+	flex-basis: 10%;
+	align-items: center;
+	max-height: 50px;
+}
+.navbutton
+{
+	flex-basis: 33.3%;
+}
+#opennav
+{
+	display: none;
+}
+.btns img
+{
+	
+	max-width: 50%;
+	height: 100%;
+	object-fit: cover;	
+}
+#searchlogo:hover
+{
+	cursor: pointer;
+}
+
+.search
+{
+	grid-column: 2;
+}
+.cart
+{
+	grid-column: 3;
+}
+a
+{
+	text-decoration: none;
+}
+
+
+.footbar{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 80px;
+    border: pink dashed 2px;
+}
+.footbar-item
+{
+	margin:10px;
+	font-size: 18px;
+}
+.footbar-items
+{
+	margin: auto;
+	display: flex;
+	font-family: "Josefin Slab";
+	
+}
+.footbar-item a{
+	text-decoration: none;
+	color: black;
+}
+@media  (max-width:1000px) {
+	.navbar-items
+	{
+		
+		display: none;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		text-align: center;
+		grid-column: 2;
+		border-bottom: none;
+	}
+	.navbar-item
+	{
+		flex-basis: 100%;
+		align-items: center;
+		text-align: center;
+		justify-content: space-around;
+		margin: auto;		
+	}
+	.navbar
+	{
+		display: grid;
+		position: fixed;
+		padding-top: 2.5%;
+		min-height: 10px;
+		height: 100%;
+		z-index: 100;
+		width: 100%;
+		height: auto;
+	}
+	.logoname
+	{
+		display: block;
+		margin: auto;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-weight: 700;
+	}
+	#opennav
+	{
+		display: block;		
+		margin: 0 auto;
+		margin-left: 30px;
+	}
+	#menubtn
+	{
+		max-width: 30px;
+		max-height: 30px;
+		object-fit: cover; 
+	}
+	.navbutton
+	{
+		flex-basis: 100%;
+		align-items: center;
+	}
+	#cartlogo,#searchlogo
+	{
+		display: none;
+	}
+	.footbar-items{
+		flex-direction: row;
+		flex-wrap: wrap;
+	}	
+	.footbar-item
+	{
+		align-items: center;
+		flex-basis: 100%;
+		text-align: center;
+	}
+	.navbar-items,#menubtn
+    {
+        transition: 0.7s;
+    }
+		
+}
