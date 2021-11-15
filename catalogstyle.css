@@ -3,7 +3,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2% 32% 32% 32%;
-    overflow: auto;
+    
 }
 .catalognav{
     grid-row: 1;
@@ -37,9 +37,9 @@
     grid-template-rows: 5% 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin: 4%;
+    margin: 5% 2%;
     grid-row-gap: 3%;
-    grid-column-gap: 3%;
+    grid-column-gap: 2%;
 }
 .catalogmenu
 {
@@ -70,7 +70,38 @@
     overflow: hidden;
     margin-top: 20px;
     margin-bottom: 20px;
-    
+    background: pink;
+}
+a
+{
+	text-decoration: none;
+}
+/* .toitem1,.toitem2,.toitem3
+{
+    display: none;
+    position: absolute;
+    color: white;
+    font-size: 35px;
+    font-family: 'Roboto'sans-serif;
+    font-weight: 600;
+    padding: 5px;
+    border: 2px solid white;
+    top: 70%;
+    left: 18%;
+} */
+.toitem1,.toitem2,.toitem3,.toitem4,.toitem5,.toitem6
+{
+    display: none;
+}
+.catalog-item-img :hover
+{
+    opacity: 0.6;
+    transition-duration: 0.8s;
+    cursor: pointer;
+}
+.catalog-item-img:hover .toitem
+{
+    display: block;
 }
 #cnd1
 {
@@ -115,4 +146,26 @@
     font-family: 'Public Sans', sans-serif;
     font-weight: 500;
     font-size: 30px;
+}
+@media (max-width:1000px) {
+    .main
+    {
+        grid-template-columns: 1fr 1fr;
+    }
+     .catalogcontent
+{
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 2% 31% 31% 31%;
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+} 
+#ctgcnd3,#ctgcnd4,#ctgch3,#ctgch4,#ctgck3,#ctgck4
+{
+    grid-row: 3;
+}
+#ctgcnd5,#ctgcnd6,#ctgch5,#ctgch6,#ctgck5,#ctgck6
+{
+    grid-row: 4;
+}
 }

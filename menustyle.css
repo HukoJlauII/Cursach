@@ -103,39 +103,37 @@ html,body
 }
 .btns
 {
-	margin: 10px;
+	/* margin: 10px; */
 	display: flex;
 	flex-direction: row-reverse;
 	flex-basis: 10%;
 	align-items: center;
-	max-height: 50px;
 }
 .navbutton
 {
 	flex-basis: 33.3%;
+	align-items: center;
+	display: flex;
+	justify-content: space-around;
 }
 #opennav
 {
 	display: none;
 }
+#logonav
+{
+	max-height: 50px;
+}
 .btns img
 {
-	max-width: 50%;
-	height: 100%;
+	height: 50px;
 	object-fit: cover;	
 }
-#searchlogo:hover
-{
-	cursor: pointer;
-}
 
-.search
+#vk,#gh
 {
-	grid-column: 2;
-}
-.cart
-{
-	grid-column: 3;
+	margin: auto;
+	
 }
 a
 {
@@ -223,7 +221,7 @@ a
 		flex-basis: 100%;
 		align-items: center;
 	}
-	#cartlogo,#searchlogo
+	#vk,#gh
 	{
 		display: none;
 	}
