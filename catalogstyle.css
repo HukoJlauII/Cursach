@@ -1,0 +1,118 @@
+.main
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2% 32% 32% 32%;
+    overflow: auto;
+}
+.catalognav{
+    grid-row: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: auto;
+    font-size: 36px;
+    text-align: center;
+    font-family: 'seoulhangang-cbl-regular', sans-serif; 
+    margin-bottom: 10px;   
+}
+.catalognav p{
+    color: darkslategray;
+}
+.catalognav a{
+    color: grey;
+}
+.main h1{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 64px;
+    text-align: center;
+    font-weight: 700;
+}
+.catalogcontent
+{
+    display: grid ;
+	grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 5% 1fr 1fr;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin: 4%;
+    grid-row-gap: 3%;
+    grid-column-gap: 3%;
+}
+.catalogmenu
+{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    
+}
+.catalog-item
+{
+	 display: grid;
+     grid-template-rows: 10% 70% 20%;
+    /* border:1px solid black;	 */
+	align-items: center;
+	overflow: hidden; 
+    text-align: center;
+    height: 100%;
+    background: #E0DFCE;
+}
+.catalog-item-name
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.catalog-item-img
+{
+    max-height: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+#cnd1
+{
+    margin-top: -19%;
+}
+#cnd5
+{
+    margin-top: -15%;
+}
+#cnd6
+{
+    margin-top: -20%;
+}
+#ck4
+{
+    margin-top: -40%;
+}
+#ck5
+{
+    margin-top: -30%;
+}
+#ck6
+{
+    margin-top: -25%;
+}
+.catalog-item-img img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* margin-top: -5%; */
+}
+.catalog-item-description
+{
+   
+   padding: 10px;
+   /* margin-top: 5px;
+   margin-bottom: 5px; */
+}
+.price,.weight
+{
+    text-align: left;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+}

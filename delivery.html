@@ -9,33 +9,36 @@
     <title>Delivery - Albus</title>
 </head>
 <body>
-    <!-- <div class="header"> -->
-        <div class="navbar">
-            <a href="#"><img id="logonav" src="" alt="logo" ></a>
-            <ul class="navbar-items">
+    <div class="wrapper">
+        <div class="navbar" id="navmenu" >
+            <a href="main.html"><img id="logonav" src="" alt="logo" ></a>
+            <div class="logoname"><h1>Albus</h1></div>
+            <div id="opennav" class="navbutton">
+                <img id="menubtn" src="images/menu.png" alt="opennav">
+            </div>
+            <ul id="navbarmenu" class="navbar-items">
                 <li class="navbar-item"><a href="catalog.html">Каталог</a> </li>
                 <li class="navbar-item"><a href="delivery.html">Доставка</a> </li>
                 <li class="navbar-item"><a href="payment.html">Оплата</a> </li>
                 <li class="navbar-item"><a href="about.html">О нас</a> </li>
             </ul>
             <div class="btns">
-                <div id="searchlogo" class="search">
-                    <a href=""><img id="searchlogoimg"  src="images\logosearch.svg "  alt="search"></a>
+                <div id="cartlogo" class="navbutton">
+                    <a href="">
+                        <img id="cartlogoimg"src="images\cartlogo.svg"  alt="cart">
+                    </a>
+                    
                 </div>
-            <div id="cartlogo" class="cart">
-                <a href="">
-                    <img id="cartlogoimg"src="images\cartlogo.svg"  alt="cart">
-                </a>
-                
-            </div>         
+                <div id="searchlogo" class="navbutton">
+                    <img id="searchlogoimg"  src="images\logosearch.svg "  alt="search">
+                </div>
+                     
             </div>
         </div>
-       
-        <div class="main">
-           
-
+        <div id="main" class="main">
+            
         </div>
-        <div class="footbar">
+        <div id="footbarmenu" class="footbar">
             <ul class="footbar-items">
                 <li class="footbar-item"><a href="">О нас</a> </li>
                 <li class="footbar-item"><a href="">Контакты</a> </li>
@@ -43,7 +46,8 @@
                 <li class="footbar-item"><a href="">Вопросы и ответы</a> </li>
             </ul>
         </div>
-    <!-- </div> -->
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
 

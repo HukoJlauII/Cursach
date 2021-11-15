@@ -44,7 +44,6 @@ table {
 	border-spacing: 0;
 }
 
-
 .maincontent
 {
 	background: #E0DFCE;
@@ -69,8 +68,7 @@ a
 	margin: 10px;
 	height: 0px;
 	padding-top: 33.3%;
-  	padding-bottom: 33.3%;
-	
+  	padding-bottom: 33.3%;	
 	border-radius: 50px;
 	font-family: "Josefin Slab";
 	align-items: center;
@@ -92,30 +90,6 @@ a
 	object-fit: contain;
 	
 }
-/* #candy
-{
-	background-image: url(../images/candy.jfif);
-	 
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-}
-#chocolate
-{
-	background-image: url(../images/chocolate.jfif);
-	
-	background-size: cover;
-	background-position:center;
-	background-repeat: no-repeat;
-}
-#cake
-{
-	background-image: url(../images/cake2.jfif);
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat;
-} */
-/* //background-size:600px */
 .othercontent-item:hover {
 	 
     transform: scale(1.05);

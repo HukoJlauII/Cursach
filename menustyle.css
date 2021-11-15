@@ -43,17 +43,21 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-body
+html,body
 {
 	height: 100%;
 }
-/* .wrapper
+.wrapper
 {
 	width: 100%;
+	min-height: 100%;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
-} */
+}
+.main{
+	background: #FCE4E4;
+	flex: 1 1 auto;
+}
 .header
 {
 	align-items: center;
@@ -66,8 +70,7 @@ body
 	margin: 0;
 	background: #F5EAD3;
 	min-height: 166px;
-	z-index: 100;
-	/* flex-basis: 100%; */
+	z-index: 100;	
 }
 #logonav{
 	margin-left: 20px;
@@ -87,7 +90,6 @@ body
 	align-items: center;
 	border-bottom: 1px solid black;
 	width:100% ;
-
 }
 .navbar-item
 {
@@ -118,7 +120,6 @@ body
 }
 .btns img
 {
-	
 	max-width: 50%;
 	height: 100%;
 	object-fit: cover;	
@@ -195,6 +196,7 @@ a
 		z-index: 100;
 		width: 100%;
 		height: auto;
+		
 	}
 	.logoname
 	{
@@ -208,7 +210,7 @@ a
 	{
 		display: block;		
 		margin: 0 auto;
-		margin-left: 30px;
+		margin-right: 20%;
 	}
 	#menubtn
 	{
@@ -241,3 +243,4 @@ a
     }
 		
 }
+
