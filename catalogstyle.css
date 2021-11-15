@@ -2,8 +2,8 @@
 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2% 32% 32% 32%;
-    
+    grid-template-rows: 2% repeat(3,1400px);
+    overflow: hidden;
 }
 .catalognav{
     grid-row: 1;
@@ -12,7 +12,8 @@
     padding-top: 10px;
     padding-bottom: 10px;
     margin: auto;
-    font-size: 36px;
+    font-size: calc(18px + 18 * (100vw / 1200));
+    /* font-size: 36px; */
     text-align: center;
     font-family: 'seoulhangang-cbl-regular', sans-serif; 
     margin-bottom: 10px;   
@@ -23,10 +24,15 @@
 .catalognav a{
     color: grey;
 }
+.catalognav span
+{
+    vertical-align: sub;
+}
 .main h1{
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
-    font-size: 64px;
+    /* font-size: 64px; */
+    font-size: calc(18px + 46 * (100vw / 1200));
     text-align: center;
     font-weight: 700;
 }
@@ -37,9 +43,10 @@
     grid-template-rows: 5% 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 4;
-    margin: 5% 2%;
-    grid-row-gap: 3%;
+    margin: 0% 2%;
     grid-column-gap: 2%;
+    
+    
 }
 .catalogmenu
 {
@@ -49,19 +56,20 @@
 }
 .catalog-item
 {
-	 display: grid;
+	display: grid;
      grid-template-rows: 10% 70% 20%;
-    /* border:1px solid black;	 */
 	align-items: center;
 	overflow: hidden; 
     text-align: center;
-    height: 100%;
-    background: #E0DFCE;
+    height: 90%;
+    background: #FFEEEE;
+    align-self: center;
 }
 .catalog-item-name
 {
     font-family: 'Roboto', sans-serif;
-    font-size: 32px;
+    font-size: calc(18px + 14 * (100vw / 1200));
+    /* font-size: 32px; */
     font-weight: 700;
 }
 .catalog-item-img
@@ -76,19 +84,7 @@ a
 {
 	text-decoration: none;
 }
-/* .toitem1,.toitem2,.toitem3
-{
-    display: none;
-    position: absolute;
-    color: white;
-    font-size: 35px;
-    font-family: 'Roboto'sans-serif;
-    font-weight: 600;
-    padding: 5px;
-    border: 2px solid white;
-    top: 70%;
-    left: 18%;
-} */
+
 .toitem1,.toitem2,.toitem3,.toitem4,.toitem5,.toitem6
 {
     display: none;
@@ -98,6 +94,11 @@ a
     opacity: 0.6;
     transition-duration: 0.8s;
     cursor: pointer;
+}
+.catalog-item-img:active
+{
+    opacity: 0.8;
+    transition-duration: 0.8s;
 }
 .catalog-item-img:hover .toitem
 {
@@ -137,29 +138,40 @@ a
 {
    
    padding: 10px;
-   /* margin-top: 5px;
-   margin-bottom: 5px; */
 }
 .price,.weight
 {
     text-align: left;
     font-family: 'Public Sans', sans-serif;
     font-weight: 500;
+    font-size: calc(18px + 30 * (100vw / 1200));
     font-size: 30px;
 }
 @media (max-width:1000px) {
     .main
     {
         grid-template-columns: 1fr 1fr;
+        grid-row-gap: 1%;
+        grid-template-rows: 2% repeat(3,31%);
+        
     }
      .catalogcontent
 {
     grid-template-columns: 50% 50% ;
-    grid-template-rows: 2% 31% 31% 31%;
-    
+    grid-template-rows: 3% 31% 31% 31%;
+    grid-row-gap: 2%;
     grid-column-start: 1;
     grid-column-end: 3;
+    
 } 
+.catalognav
+{
+    margin-top: 13%;
+}
+.catalog-item
+{
+    height: 100%;
+}
 #ctgcnd3,#ctgcnd4,#ctgch3,#ctgch4,#ctgck3,#ctgck4
 {
     grid-row: 3;
@@ -167,5 +179,83 @@ a
 #ctgcnd5,#ctgcnd6,#ctgch5,#ctgch6,#ctgck5,#ctgck6
 {
     grid-row: 4;
+}
+
+}
+@media   (max-width:450px) {
+    
+    .main
+    {
+        grid-template-columns: 1fr;
+        grid-row-gap: 10px;
+        grid-template-rows: 1% repeat(3,2400px);
+        overflow-y: scroll;
+    }
+    .catalogmenu
+    {
+        margin-top: 3%;
+    }
+    .catalogcontent
+    {
+        grid-template-columns: 100% ;
+        grid-template-rows: 1.5% repeat(6,23%);
+        grid-row-gap: 2%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        margin-bottom: 200%;
+        
+    }
+    #candycontent
+    {
+        grid-row: 2;
+    }
+    #chococontent
+    {
+        grid-row: 3;
+    }
+    #cakecontent
+    {
+        grid-row: 4;
+        margin: 0;
+    }
+    .catalog-item
+    {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        width: 85%;
+        margin: auto;
+        
+    } 
+    #ctgcnd1,#ctgch1,#ctgck1
+    {
+        grid-row: 2;
+    }
+    #ctgcnd2,#ctgch2,#ctgck2
+    {
+        grid-row: 3;
+    }
+    #ctgcnd3,#ctgch3,#ctgck3
+    {
+        grid-row: 4;
+    }
+    #ctgcnd4,#ctgch4,#ctgck4
+    {
+        grid-row: 5;
+    }
+    #ctgcnd5,#ctgch5,#ctgck5
+    {
+        grid-row: 6;
+    }
+    #ctgcnd6,#ctgch6,#ctgck6
+    {
+        grid-row: 7;
+    }
+    .price,.weight
+    {
+    font-size: 18px;
+    }
+    .catalog-item-name
+{
+    font-size: 20px;
 }
 }
