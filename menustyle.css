@@ -50,6 +50,10 @@ html,body
 {
 	height: 100%;
 }
+body
+{
+	background:  #FCE4E4;
+}
 .wrapper
 {
 	width: 100%;
@@ -58,7 +62,7 @@ html,body
 	flex-direction: column;
 }
 .main{
-	background: #FCE4E4;
+	/* background:  #FCE4E4; */
 	flex: 1 1 auto;
 }
 .header
@@ -150,6 +154,7 @@ a
 	justify-content: space-between;
 	min-height: 80px;
     border: pink dashed 2px;
+	background:white;
 }
 .footbar-item
 {
@@ -190,7 +195,6 @@ a
 	.navbar
 	{
 		display: grid;
-		position: fixed;
 		padding-top: 2.5%;
 		min-height: 10px;
 		height: 100%;

@@ -1,0 +1,134 @@
+
+.main
+{
+
+    display: grid;
+    align-items: center;
+    grid-template-rows: 10% 80% ;
+    grid-template-columns: 1fr 1fr; 
+    grid-row-gap: 2%; 
+    /* padding-bottom: 5%; */
+    align-self: center;
+    place-content: center  ;
+    padding-bottom: 5%;
+}
+.main h1{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(18px + 30 * (100vw / 1200));
+    text-align: center;
+    font-weight: 700;
+    
+}
+.name
+{
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+}
+.itemblock
+{
+    align-self: flex-start;
+}
+.itempic
+{
+    align-self: flex-start ;
+    justify-self: flex-start;
+    padding-left: 12%;
+    overflow: hidden;
+    max-height: 100%;
+    grid-row: 2;
+    grid-column: 1;
+}
+.itempic img{
+    max-width: 90%;
+    align-self: flex-start;
+    height: 100%;
+    object-fit: cover;
+}
+.item-description,.confirm
+{
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+}
+.other{
+    grid-template-columns: 1fr;
+    align-self: flex-start;
+    height: 100%;
+    display: grid;
+}
+.item-description{
+    flex-basis: 100%;
+    grid-row: 1;
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + 22 * (100vw / 1200));
+    font-weight: bold;
+}
+.desc{
+    font-size: calc(10px + 20 * (100vw / 1200));
+    font-weight: normal;
+}
+.confirm{
+    color: white;
+    background-color: #FF0000;
+    opacity: 0.5;
+    font-size: calc(24px + 42 * (100vw / 1200));
+    text-align: center;
+    padding: 0% 2%;
+    align-self: flex-end;
+    max-width: 50%;
+}
+.confirm a{
+    color: white;
+}
+.catalog-item-description
+{
+    grid-row: 2;
+    grid-column: 1;
+    align-self: flex-end;
+    margin-top: 2%;
+}
+.price,.weight
+{
+    text-align: left;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: calc(18px + 30 * (100vw / 1200));
+    font-size: 30px;
+    align-self: start;
+    justify-self: center;
+    padding-left: 12%;
+}
+@media (max-width:1000px) {
+    .main
+    {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 60% 30%;
+        margin-top: 2%;
+    }
+    
+    .itemblock  
+    {
+        align-self: center;
+        justify-self: center;
+    }
+    .other{
+        align-self: center;
+        justify-self: center;
+        grid-column: 1;
+    }
+    .item-description
+    {
+        margin: 0% 10%;
+    }
+    .confirm
+    {
+        align-self: center;
+        justify-self: center;
+        
+        margin-top: 6%;
+    }
+}
