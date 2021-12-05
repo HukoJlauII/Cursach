@@ -104,8 +104,8 @@ body
 }
 .navbar-item
 {
+	font-family: "Josefin Slab";
 	margin-bottom: 14px;
-	/* font-size: 48px; */
 	font-size: calc(18px + 30 * (100vw / 1200));
 }
 .navbar-item a{
