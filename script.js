@@ -28,7 +28,7 @@ function swipe(){
             menu.style.opacity='1'
 
         } else {
-            change_icon('/images/menu.png');
+            change_icon('./images/menu.png');
             menu.style.opacity='0'
             setTimeout(animation_add_content, 1000);
 
