@@ -1,0 +1,63 @@
+*{
+    font-family: 'Roboto',sans-serif;
+}
+
+p,h2,li,.contacts{
+    font-family: 'Montserrat';
+    font-size: calc(12px + 10 * (100vw / 1200));
+    margin: 1% 0%;
+    text-align: justify;
+}
+.main
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 10%;
+    align-items: flex-start;
+    
+}
+.main h1{
+    font-size: calc(14px + 30 * (100vw / 1200));
+    margin: auto;
+    font-weight: 700;
+    margin-bottom: 2%;
+    text-align: center;
+}
+.ab{
+    flex-basis: 100%;
+
+}
+.ab h2{
+    text-align: center;
+}
+.ab ol
+{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.ab li{
+   flex-basis:100% ;
+   margin-left: 2%;
+}
+
+
+ol{
+    list-style: decimal;
+    text-align: center;
+}
+.aboutlist,.fu
+{
+    list-style:decimal;
+}
+.contacts
+{
+    align-self: flex-start;
+    font-size: calc(10px + 6 * (100vw / 1200));
+}
+.contacts h2
+{
+    font-size: calc(10px + 8 * (100vw / 1200));
+}

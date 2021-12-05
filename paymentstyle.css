@@ -1,0 +1,41 @@
+.main
+{
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3% 10%;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+}
+.main h1{
+    font-size: calc(16px + 16 * (100vw / 1200));
+    flex-basis: 100%;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 3%;
+}
+p,h1,h2,li{
+    font-family: 'Montserrat';
+    font-size: calc(10px + 10 * (100vw / 1200));
+    text-align: justify;
+}
+
+.main h2{
+    font-size: calc(16px + 10 * (100vw / 1200));
+    font-weight: 600;
+}
+.main ol{
+    flex-basis: 100%;
+}
+.pment
+{
+        list-style:decimal;
+        margin-left: 2%;
+}
+@media   (max-width:450px) {
+.main h1
+{
+    margin-bottom: 1%;
+}
+}

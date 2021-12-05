@@ -1,0 +1,149 @@
+
+.main
+{
+    display: grid;
+    align-items: center;
+    grid-template-rows: 10% 80% ;
+    grid-template-columns: 40% 60%; 
+    grid-row-gap: 2%; 
+    grid-column-gap: 1%;
+    /* padding-bottom: 5%; */
+    align-self: center;
+    place-content: center  ;
+    padding-bottom: 5%;
+}
+.main h1{
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(16px + 18 * (100vw / 1200));
+    text-align: center;
+    font-weight: 700;
+    
+}
+/* .name
+{
+    background: #FFEEEE;
+    padding: 0% %;
+}*/
+.itemblock 
+{
+    align-self: flex-start;
+    justify-self: center;
+    grid-column: 1;
+    padding: 3% 5%;
+    background: #FFEEEE;
+}
+.itempic
+{
+    align-self: flex-start ;
+    justify-self: flex-start;
+    /* padding-left: 11%; */
+    overflow: hidden;
+    max-height: 100%;
+    grid-row: 2;
+    grid-column: 1;
+}
+.itempic img{
+    max-width: 100%;
+    align-self: flex-start;
+    height: 100%;
+    object-fit: cover;
+}
+.item-description,.confirm
+{
+    position: relative;
+    grid-column: 2;
+    grid-row: 2;
+}
+.other{
+    
+    align-self: flex-start;
+    height: 100%;
+    margin-right: 3%;
+    
+}
+.item-description{
+    flex-basis: 100%;
+    grid-row: 1;
+    align-self: flex-start;
+    justify-self: flex-start;
+    font-family: 'Roboto', sans-serif;
+    font-size: calc(12px + 10 * (100vw / 1200));
+    font-weight: bold;
+    text-align: justify;
+}
+.desc{
+    font-size: calc(10px + 10 * (100vw / 1200));
+    font-weight: normal;
+}
+.confirm{
+    color: white;
+    background-color: #FF0000;
+    opacity: 0.5;
+    font-size: calc(24px + 30 * (100vw / 1200));
+    text-align: center;
+    /* max-width: 50%; */
+    width: 40%;
+    margin-top: 25%;
+}
+.confirm a{
+    color: white;
+}
+.catalog-item-description
+{
+    grid-row: 2;
+    grid-column: 1;
+    align-self: flex-end;
+    margin-top: 2%;
+}
+.price,.weight
+{
+    text-align: left;
+    font-family: 'Public Sans', sans-serif;
+    font-weight: 500;
+    font-size: calc(12px + 20 * (100vw / 1200));
+    align-self: start;
+    justify-self: center;
+
+}
+@media (max-width:1000px) {
+    .main
+    {
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 50% 40%;
+        /* margin-top: 2%; */
+        /* grid-row-gap: 4%;  */
+    }
+    .itemblock
+    {
+        margin: 0;
+    }
+    .name
+    {
+        align-self: flex-end;
+    }
+    .other{
+        margin: 4% 0%;
+        display: grid;
+        /* align-self: center; */
+        justify-self: center;
+        grid-column: 1;
+        grid-template-rows: 60% 40%;
+        margin-right: 0%;
+    }
+    .item-description
+    {
+        /* justify-self: center; */
+        margin: 0% 10%;
+        align-self: center;
+    }
+    .confirm
+    {
+        align-self: center;
+        justify-self: center;
+        /* margin-top: 6%; */
+        padding: 0% 2%;
+        /* margin: auto; */
+        margin: 10% 0%;
+    }
+}
